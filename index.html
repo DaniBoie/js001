@@ -22,8 +22,6 @@
   <button id="calulateButton" onclick=promp3()>Click me for calculation!</button>
 
   <script>
-   let x = 0
-   let y = 0
    let baseNum = 0
    let operation = 0
    let secNum = 0
@@ -32,39 +30,36 @@
     function promp () {
       baseNum = parseInt(prompt('First Number?'))
       console.log(baseNum)
-
     }
 
     function promp1() {
-        operation = prompt('What operation do you want to perform? (use operations - + * / **')
-      
+      operation = prompt('What operation do you want to perform? (use operations - + * / **)')
       console.log(operation)
     }
 
     function promp2() {
         secNum = parseInt(prompt('Second Number?'))
         console.log(secNum)
-
       }
 
   function promp3() {
     if (operation === '-') {
-      calc = baseNum - secNum
-      console.log(calc)
+        calc = baseNum - secNum
+        console.log(calc)
     } else if (operation === '+') {
-      calc = baseNum + secNum
-      console.log(calc)
+        calc = baseNum + secNum
+        console.log(calc)
     } else if (operation === '*') {
-      calc = baseNum * secNum
-      console.log(calc)
+        calc = baseNum * secNum
+        console.log(calc)
     } else if (operation === '/') {
-      calc = baseNum / secNum
-      console.log(calc)
+        calc = baseNum / secNum
+        console.log(calc)
     } else if (operation === '**') {
-      calc = baseNum ** secNum
-      console.log(calc)
+        calc = baseNum ** secNum
+        console.log(calc)
     } else {
-      alert('If there was an arror try spelling "addition, subtraction, multiplication, division or exponent"')
+      alert('How did you even get here?')
     }
 
     alert('Your final calculation is ' + calc)
